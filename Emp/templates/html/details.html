@@ -1,0 +1,24 @@
+{% extends 'html/header.html' %}
+{% block title %}details{% endblock %}
+{% block content %}
+<div class="container">
+<div class="row">
+<div class="card col-md-4">
+<h4 class="text-warning">profile image</h4>
+
+<div class="card-body">
+<img src="https://www.pngitem.com/pimgs/m/146-1468479_my-profile-icon-blank-profile-picture-circle-hd.png" height="200px" width="200px">
+</div>
+</div>
+<div class="card col-md-7">
+<h4>user details</h4>
+<div class="">
+<h2><label class="text-warning">username:{{d.us}}</label></h2>
+<h2><label class="text-danger">age:{{d.age}}</label></h2>
+<h2><label class="text-success">email:{{d.em}}</label></h2>
+</div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+

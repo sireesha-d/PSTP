@@ -1,0 +1,42 @@
+{% load static %}
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="{% url 'hm' %}">
+ 
+    <img src="{% static 'images/logo.jpg' %}" alt="logo" style="width:70px;">
+  </a>
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <!-- Links -->
+   <div class="collapse navbar-collapse" id="collapsiblenavbar">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'hm' %}">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'ab' %}">about</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'cn' %}">contact</a>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'lg' %}">login</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{% url 'rg' %}">register</a>
+    </li>
+   </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{% url 'cr' %}">CRUD operations</a>
+    <li class="nav-item">
+        <a class="nav-link" href="{% url 'df' %}">Dynamic Form</a>
+        <li class="nav-item">
+        <a class="nav-link" href="{% url 'show' %}">Show Data</a>
+    </li>
+
+    </li>
+  </ul>
+</div>
+</nav>
+

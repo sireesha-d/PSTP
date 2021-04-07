@@ -1,0 +1,17 @@
+{% extends 'html/header.html' %}
+{% block title %}undeleted{% endblock %}
+{% block content %}
+<div class="container">
+	<div class="card card-md-5 mt-5 mx-auto">
+		<div class ="card-body mx-3">
+			<form method="POST">
+				{% csrf_token %}
+				<h3 class="bg-secondary text-center border rounded text-light">Delete User</h3>
+				<p>are you sure you need to delete the user {{sd.username}}</p>
+				<input type="submit" value="yes confirm" class="btn btn-success">
+				<a href="{% url 'show' %}" class="btn btn-danger">No</a>
+			</form>
+		</div>
+	</div>
+</div>
+{% endblock %}
